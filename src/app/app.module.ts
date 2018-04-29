@@ -15,7 +15,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     IonicModule.forRoot(),
     RouterModule.forRoot([
-      { path: '', loadChildren: './pages/tabs/tabs.module#TabsPageModule' }
+      { path: '', loadChildren: './pages/tabs/tabs.module#TabsPageModule'},
+      { path: 'sample', loadChildren: './pages/sample/sample.module#SamplePageModule' }
     ])
   ],
   providers: [StatusBar, SplashScreen],

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,4 +6,13 @@ import { Component } from '@angular/core';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss']
 })
-export class HomePage {}
+export class HomePage {
+  
+  constructor(private router:Router) {
+  }
+
+  navigateUser() {
+    this.router.navigateByUrl('/sample');
+  }
+
+}
