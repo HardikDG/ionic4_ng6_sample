@@ -7,5 +7,8 @@
 <ion-content padding>
   The world is your oyster.
   <p>If you get lost, the <a target="_blank" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
-  <button ion-button color="secondary" (click)="navigateUser()">Secondary</button>
+  <ion-button color="secondary" (click)="navigateUser()">Secondary</ion-button>
+  <ion-nav-push component="app-sample">
+      <ion-button>Push to sample page</ion-button>
+    </ion-nav-push>
 </ion-content>
